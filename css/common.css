@@ -1,0 +1,386 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: YouYuan;
+}
+
+/*
+*=========================================================
+*                  index.html
+*=========================================================
+*/
+/*
+  ==========顶部菜单==========
+*/
+#navbar ul
+{
+    margin: 0;
+}
+#navbar li:hover
+{
+    background: #c6ffc9;
+}
+#navbar a
+{
+    font-family: YouYuan;
+}
+#cityBox
+{
+    display: inline-block;
+    margin-left: 30px;
+    font-family: YouYuan ;
+    color: #5cb85c;
+}
+.navbar-header img
+{
+	margin-left:20px;
+}
+/*
+============轮播图=========
+*/
+.carousel-inner .item img
+{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/***===========UI菜单=====*/
+.mid_bar
+{
+    width:100%;
+    height:5.5em;
+    background:#fff;
+    margin-top: 6px;
+    padding:5px 5px 5px 5px;
+}
+.mid_blck
+{
+    width:25%;
+    background:#fff;
+    float:left;
+    font-size:1em;
+}
+.mid_blck_in
+{
+    width:97%;
+    margin:0 auto;
+    margin-top: 5px;
+    text-align:center;
+    font-family: YouYuan;
+}
+.btn-menu
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width:40px;
+    height:40px;
+    display:block;
+    margin:0 auto;
+}
+.btn-menu:hover
+{
+    opacity: 0.5;
+}
+.btn-menu img
+{
+    width: 25px;
+    height: 25px;
+    margin-top:6px;
+}
+/***==========活动图栏=====*/
+#activity-box
+{
+    width: 100%;
+    border-top: 5px #dadada solid;
+    border-bottom: 5px #dadada solid;
+    height: 130px;
+}
+
+#activity-box a:hover
+{
+    text-decoration: none;
+}
+@keyframes rotateIn {
+    from{
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        -o-transform: scale(0.6);
+        transform: scale(0.6);}
+    to{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+#activity-box .activity-left:hover img,
+.activity-right .activity-r-top:hover  img,
+.activity-right  span[class="rl"]:hover  img[class="rl"],
+.activity-right  span[class="rr"]:hover img[class="rr"]
+{
+    -webkit-animation: rotateIn ease-in 1s;
+    -o-animation: rotateIn ease-in 1s;
+    animation:  rotateIn  ease-in 1s;
+}
+#activity-box .activity-left
+{
+    width: 40%;
+    padding: 5px;
+    height: 120px;
+    float: left;
+    border-right: 1px solid #cccccc;
+}
+#activity-box .activity-left:hover img
+{
+    transition-duration: 0.5s;
+}
+#activity-box .activity-right
+{
+    width: 60%;
+    height: 120px;
+    float: left;
+}
+#activity-box .activity-right .activity-r-top
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    height: 35%;
+}
+#activity-box .activity-right .activity-r-bottom
+{
+    width: 100%;
+    height: 65%;
+}
+#activity-box .activity-right .activity-r-bottom span
+{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+/*===============附近商家==================*/
+#store-list
+{
+    width: 100%;
+}
+#store-list .list-title
+{
+    text-align: left;
+    margin-bottom: 5px;
+}
+#store-list .list-title span
+{
+    margin-left: 10px;
+}
+.store
+{
+    width: 100%;
+    height: 120px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+.store:hover
+{
+    background: #f4f4f4;
+}
+.store .store-top
+{
+    width: 100%;
+    height: 70%;
+}
+.store .store-top .store-pic
+{
+    width: 33%;
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 100%;
+    float: left;
+    padding: 1px;
+}
+.store .store-top .store-introduction
+{
+    width: 60%;
+    height: 100%;
+    float: left;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+.store .store-top .store-introduction p
+{
+    font-size: 12px;
+    margin-top: -6px;
+    color: #6f6f6f;
+}
+.store-bottom img
+{
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+#switch-news
+{
+    display: inline-block;
+}
+#store-news li
+{
+    list-style: none;
+}
+#store-news:first-child
+{
+    margin-top: -10px;
+}
+.store-bottom a
+{
+    font-size: 12px;
+    color: #ff8352;
+}
+#switch-news
+{
+    font-size: 12px;
+    color: #828282;
+    margin-left: 20px;
+}
+/*
+*=========================================================
+*                   login.html
+*=========================================================
+*/
+.top-box
+{
+    margin-top: 0;
+    background:#5cb85c;
+    width: 100%;
+    color: white;
+    height: 40px;
+    text-align: center;
+    position: static;
+}
+.top-box span
+{
+    display: inline-block;
+    margin-top: 10px;
+    letter-spacing: 20px;
+}
+#form1
+{
+    margin: 20px 10px 0 10px;
+
+}
+.btn-box
+{
+    width: 100%;
+    text-align: center;
+}
+.btn-box input
+{
+    width: 277px;
+}
+#form1 p
+{
+    text-align: right;
+    width: 100%;
+    margin-top: 15px;
+}
+.top-box input[type="text"]
+{
+    color: #080808;
+    border: 0;
+    margin-right: 10px;
+}
+.tool-box
+{
+    width: 100%;
+	margin-top: 45px;
+    height: 40px;
+    border-bottom: 1px #cccccc solid;
+}
+.tool-box .calculate
+{
+    float: left;
+}
+.tool-box .calculate div
+{
+    float: left;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.tool-box .operate
+{
+    float: right;
+    margin-right: 5px;
+}
+#shopCart-table
+{
+    width: 100%;
+    color: #6f6f6f;
+}
+#shopCart-table tr:hover
+{
+	background:#f4f4f4;
+}
+#shopCart-table td
+{
+    border: 1px #cccccc solid;
+}
+#shopCart-table input[type="checkbox"]
+{
+    margin-left: 2px;
+}
+#shopCart-table .goods-info
+{
+    width: 84%;
+    text-align: center;
+    color: #6f6f6f;
+}
+#shopCart-table .goods-info-box p
+{
+    margin: 2px 10px;
+}
+.goods-info-box img
+{
+    width: 70px;
+    float: left;
+    height: 70px;
+    margin: 5px;
+}
+.goods-info-box .goods-info-d
+{
+    float: left;
+}
+.goods-info-box .goods-info-d span
+{
+    display: inline-block;
+}
+.more
+{
+    width: 100%;
+    margin-bottom: 50px;
+    height: 25px;
+    text-align: center;
+}
+/*
+*=========================================================
+*                   shopping.html
+*=========================================================
+*/
+/*
+*=========================================================
+*                   register.html
+*=========================================================
+*/
+#register .form-group
+{
+    margin: 20px 3px;
+}
+#register .form-group .btn
+{
+    width:200px;
+    margin-left: 10px;
+}

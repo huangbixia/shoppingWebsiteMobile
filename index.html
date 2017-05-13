@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/common.css" rel="stylesheet">
+   
+    <script type="text/javascript" src="js/common.js"></script>
+    <!--[if lt IE 9 ]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://sdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--顶部菜单-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+      <div class="navbar-header">
+	      <a href="index.html"><img src="images/logo.png" style="width:80px;height:50px;"></a>
+		   <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background: #5cb85c;">
+                    <span class="icon-bar" style="background: white;"></span>
+                    <span class="icon-bar" style="background: white;"></span>
+           </button>
+	  </div>
+      <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="login.html">登录</a></li>
+              <li><a href="register.html">注册</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+              <li><a href="about_us.html">关于我们</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<!--轮播图-->
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="#"><img src="images/bg1.jpg" alt="loading"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="images/bg2.jpg" alt="loading"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="images/bg3.jpg" alt="loading"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="images/bg4.jpg" alt="loading"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="images/bg5.jpg" alt="loading"></a>
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev">&lsaquo;
+    </a>
+    <a class="carousel-control right" href="#myCarousel"
+       data-slide="next">&rsaquo;
+    </a>
+</div>
+
+<!--UI菜单-->
+<div class="menu_warp">
+    <div class="mid_bar">
+        <div class="mid_blck">
+            <div class="mid_blck_in">
+                <a href="#" class="btn-menu" style="background: #73cbff"><img src="images/search.png" /></a>
+                产品搜索
+            </div>
+        </div>
+        <div class="mid_blck">
+            <div class="mid_blck_in">
+                <a href="#" class="btn-menu" style="background: #efb2ff"><img src="images/calendar.png" /></a>
+                最近活动
+            </div>
+        </div>
+        <div class="mid_blck">
+            <div class="mid_blck_in">
+                <a href="#" class="btn-menu" style="background: #ffdba3"><img src="images/menu.png" /></a>
+                推荐菜谱
+            </div>
+        </div>
+        <div class="mid_blck">
+            <div class="mid_blck_in">
+                <a href="#" class="btn-menu" style="background: #95ffa5"><img src="images/store.png" /></a>
+                新店优惠
+            </div>
+        </div>
+        </div>
+        <div class="mid_bar">
+        <div class="mid_blck">
+            <div class="mid_blck_in">
+                <a href="#" class="btn-menu" style="background: #ff8352"><img src="images/vegetable.png" /></a>
+                新鲜蔬菜
+            </div>
+        </div>
+        <div class="mid_blck">
+            <div class="mid_blck_in">
+                <a href="#" class="btn-menu" style="background: #7bd2a0"><img src="images/fish.png" /></a>
+                肉类海鲜
+            </div>
+        </div>
+        <div class="mid_blck">
+            <div class="mid_blck_in">
+                <a href="#" class="btn-menu" style="background: #ffd424"><img src="images/rice.png" /></a>
+                油类杂粮
+            </div>
+        </div>
+        <div class="mid_blck">
+            <div class="mid_blck_in">
+                <a href="#" class="btn-menu" style="background: #ffa2bb"><img src="images/jujia.png" /></a>
+                居家用品
+            </div>
+        </div>
+    </div>
+</div>
+<!--活动图栏-->
+<div id="activity-box">
+    <div class="activity-left">
+       <a href="#">
+           <span>
+               <img src="images/miaosha.png" alt="loading" style="width: 100%;height: 40%;"/>
+               <img src="images/pic1.png" alt="loading" style="width: 100%;height: 60%;"/>
+           </span>
+       </a>
+    </div>
+    <div class="activity-right">
+        <div class="activity-r-top">
+           <a href="#">
+               <img src="images/pic3.png" alt="loading" style="width: 20%;height: 100%;vertical-align: middle;margin-left: 15px;">
+               <span style="font-weight: bold;color: orange;margin-left: 10px;font-size: 14px;">全场9.9元!!!</span>
+           </a>
+        </div>
+        <div class="activity-r-bottom">
+            <a href="#">
+               <span style=" border-right: 1px solid #cccccc;" class="rl">
+                   <label style="font-weight: bold;font-size:10px;color: #b8b8b8;width: 100%;text-align: center;margin-top: 5px;">健康养生</label>
+                   <br />
+                   <img src="images/pic2.png" class="rl" alt="loading" style="width: 45%;height: 45%;margin-left: 20px;margin-top: 3px;" />
+                </span>
+            </a>
+            <a href="#">
+               <span class="rr">
+                   <label style="font-weight: bold;color: #b8b8b8;font-size:10px;width: 100%;text-align: center;margin-top: 5px;">满则打折</label>
+                   <br />
+                   <img src="images/pic.jpg" class="rr" alt="loading" style="width: 55%;height: 55%;margin-left: 20px;margin-top: 3px;" />
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--附近商铺-->
+<div id="store-list">
+    <div class="list-title"><span>附近商家</span></div>
+        <div class="store">
+            <a href="#">
+           <div class="store-top">
+               <div class="store-pic">
+                  <img src="images/vegetables.jpg" alt="loading" style="width: 100%;height:100%;">
+               </div>
+               <div class="store-introduction">
+                   <p style="margin-bottom: 20px;"><span style="font-size: 14px;color: green;font-weight: bold;">SSS蔬菜行(XX市场)</span></p>
+                   <p>评分：4.2 | 月售：122份</p>
+                   <p>起送：￥20 | 配送：0</p>
+               </div>
+           </div>
+                </a>
+           <div class="store-bottom">
+               <ul>
+                   <li><a href="#"><img src="images/kuoyin.png" alt="loading"><span>满50减5元，满30免运费</span></a>
+               </ul>
+           </div>
+        </div>
+    <div class="store">
+        <a href="#">
+            <div class="store-top">
+                <div class="store-pic">
+                    <img src="images/yurou.jpg" alt="loading" style="width: 100%;height:100%;">
+                </div>
+                <div class="store-introduction">
+                    <p style="margin-bottom: 20px;"><span style="font-size: 14px;color: green;font-weight: bold;">AAA蔬菜行(XX市场)</span></p>
+                    <p>评分：4.2 | 月售：122份</p>
+                    <p>起送：￥20 | 配送：0</p>
+                </div>
+            </div>
+        </a>
+        <div class="store-bottom">
+            <ul>
+                <li><a href="#"><img src="images/fire.png" alt="loading"><span>满50减5元，满30免运费</span></a>
+            </ul>
+        </div>
+    </div>
+    <div class="store">
+        <a href="#">
+            <div class="store-top">
+                <div class="store-pic">
+                    <img src="images/dami.jpg" alt="loading" style="width: 100%;height:100%;">
+                </div>
+                <div class="store-introduction">
+                    <p style="margin-bottom: 20px;"><span style="font-size: 14px;color: green;font-weight: bold;">CCC蔬菜行(XX市场)</span></p>
+                    <p>评分：4.2 | 月售：122份</p>
+                    <p>起送：￥20 | 配送：0</p>
+                </div>
+            </div>
+        </a>
+        <div class="store-bottom">
+            <ul>
+                <li><a href="#"><img src="images/new.png" alt="loading"><span>满50减5元，满30免运费</span></a>
+            </ul>
+        </div>
+    </div>
+    <div class="store">
+        <a href="#">
+            <div class="store-top">
+                <div class="store-pic">
+                    <img src="images/paigu.jpg" alt="loading" style="width: 100%;height:100%;">
+                </div>
+                <div class="store-introduction">
+                    <p style="margin-bottom: 20px;"><span style="font-size: 14px;color: green;font-weight: bold;">OOO蔬菜行(XX市场)</span></p>
+                    <p>评分：4.2 | 月售：122份</p>
+                    <p>起送：￥20 | 配送：0</p>
+                </div>
+            </div>
+        </a>
+        <div class="store-bottom">
+            <ul>
+                <li><a href="#"><img src="images/413-discount.png" alt="loading"><span>满50减5元，满30免运费</span></a>
+            </ul>
+        </div>
+    </div>
+     <div class="store">
+        <a href="#">
+            <div class="store-top">
+                <div class="store-pic">
+                    <img src="images/luobo.jpg" alt="loading" style="width: 100%;height:100%;">
+                </div>
+                <div class="store-introduction">
+                    <p style="margin-bottom: 20px;"><span style="font-size: 14px;color: green;font-weight: bold;">OOO蔬菜行(XX市场)</span></p>
+                    <p>评分：4.2 | 月售：122份</p>
+                    <p>起送：￥20 | 配送：0</p>
+                </div>
+            </div>
+        </a>
+        <div class="store-bottom">
+            <ul>
+                <li><a href="#"><img src="images/413-discount.png" alt="loading"><span>满50减5元，满30免运费</span></a>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="more">
+    加载更多<span class="glyphicon glyphicon-chevron-down" style="margin-left: 20px;"></span></div>
+<!--底部菜单-->
+<div class="navbar navbar-default navbar-fixed-bottom" style="padding:1px 1px 1px 1px;background: #5cb85c;" >
+    <div class="col-xs-3 text-center">
+        <a href="index.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:1px;">
+		    <span class="glyphicon glyphicon-home"></span>
+            <br />首页
+		</a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="shopping.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+		    <span class="glyphicon glyphicon-list-alt"></span>
+			<br />购物
+		</a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="shopCart.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+			<br />购物车
+        </a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="accounter.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+		    <span class="glyphicon glyphicon-user"></span>
+		    <br />我的
+		</a>
+    </div>
+</div>
+
+</body>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</html>

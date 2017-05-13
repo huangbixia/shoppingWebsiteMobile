@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/common.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!--[if lt IE 9 ]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://sdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+   <div class="top-box">
+       <span class="top-text">注册</span>
+   </div>
+<!--表单-->
+<div id="register">
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+  <label for="phone" class="col-sm-2 control-label">手机：<span id="phoneNum" style="margin-left:20px;"></span></label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="registerPhone" onblur="check_phone() maxlength="11" ">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="col-sm-2 control-label">密码：</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="inputPassword2" class="col-sm-2 control-label">再次输入密码：</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword2" >
+    </div>
+  </div>
+   <div class="form-group">
+    <div class="col-sm-10" style="float:right;">
+      <input type="checkbox"  id="check" >
+      我已同意并阅读<a href="#">惠家用户协议</a>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-primary">注册</button>
+    </div>
+  </div>
+</form>
+</div>
+   <!--底部菜单-->
+<div class="navbar navbar-default navbar-fixed-bottom" style="padding:1px 1px 1px 1px;background: #5cb85c;" >
+    <div class="col-xs-3 text-center">
+        <a href="index.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:1px;">
+            <span class="glyphicon glyphicon-home"></span>
+            <br />首页
+        </a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="shopping.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            <br />购物
+        </a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="shopCart.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <br />购物车
+        </a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="accounter.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+            <span class="glyphicon glyphicon-user"></span>
+            <br />我的
+        </a>
+    </div>
+</div>
+</body>
+</html>

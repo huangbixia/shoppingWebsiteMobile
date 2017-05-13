@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+<body>
+<!--顶部-->
+<div class="navbar-fixed-top">
+    <div class="top-box">
+        <label><input type="text"></label>
+        <a href="#"><span class="glyphicon glyphicon-search" style="color: white;display: inline-block;font-size: 18px;" id="search"></span></a>
+    </div>
+</div>
+<div class="shopping-content">
+<nav id="menu" class="menu">
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <ul id="menu3">
+                <li>
+                    <a href="#" class="menu-title">蔬菜类<span class="fa arrow"></span></a>
+                    <ul>
+                        <li><a href="#">叶菜花菜</a></li>
+                        <li><a href="#">根茎类</a></li>
+                        <li><a href="#">瓜果类</a></li>
+                        <li><a href="#">豆类</a></li>
+                        <li><a href="#">腌菜</a></li>
+                        <li><a href="#">豆类</a></li>
+                        <li><a href="#">茹菌</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="menu-title">肉禽水产</a>
+                    <ul>
+                        <li><a href="#">猪肉类</a></li>
+                        <li><a href="#">牛羊肉</a></li>
+                        <li>
+                            <a href="#">水产海鲜</a>
+                        </li>
+                        <li><a href="#">鸡鸭肉类</a></li>
+                        <li>
+                            <a href="#">蛋品</a>
+                        </li>
+                        <li>
+                            <a href="#">肉制品</a>
+                        </li>
+                        <li>
+                            <a href="#">其他肉类</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="menu-title">粮油干货<span class="glyphicon arrow"></span></a>
+                    <ul>
+                        <li><a href="#">米类</a></li>
+                        <li><a href="#">粉面制品</a></li>
+                        <li><a href="#">油类</a></li>
+                        <li><a href="#">杂粮</a></li>
+                        <li><a href="#">杂粮</a></li>
+                        <li><a href="#">干货</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="menu-title">生活用品<span class="glyphicon arrow"></span></a>
+                    <ul>
+                        <li><a href="#">洁净类</a></li>
+                        <li><a href="#">厨房调料</a></li>
+                        <li><a href="#">生活用纸</a></li>
+                        <li><a href="#">饮料酒水</a></li>
+                        <li><a href="#">地方特产</a></li>
+                        <li><a href="#">搭配菜谱材料</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+</nav>
+<div id="tool-box">
+<main id="main" class="panel">
+    <button class="btn-hamburger">
+        <span class="glyphicon glyphicon-th-list" style="color: #8c8c8c;">分类</span>
+    </button>
+</main>
+<div class="sort-box">
+    <span class="glyphicon glyphicon-arrow-up">销量</span>
+    <span  class="glyphicon glyphicon-arrow-up">价格</span>
+    <span  class="glyphicon glyphicon-arrow-up">信用</span>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="js/slideout.min.js"></script>
+<script type="text/javascript">
+    var sortBox = document.getElementsByClassName('sort-box')[0];
+    var sortBoxSpan = sortBox.getElementsByTagName('span');
+    for(var i=0;i<sortBoxSpan.length;i++)
+    {
+        sortBoxSpan[i].index = i;
+        sortBoxSpan[i].onclick = function()  //改变排序箭头图标
+        {
+            if(sortBoxSpan[this.index].className == 'glyphicon glyphicon-arrow-up')
+            sortBoxSpan[this.index].className = 'glyphicon glyphicon-arrow-down';
+            else  sortBoxSpan[this.index].className = 'glyphicon glyphicon-arrow-up';
+        }
+    }
+    var slideout = new Slideout({
+        'panel': document.getElementById('main'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
+    document.querySelector('.btn-hamburger').addEventListener('click', function() {
+        slideout.toggle();
+    });
+
+    document.querySelector('').addEventListener('click', function(eve) {
+        if (eve.target.nodeName === 'A') { slideout.close(); }
+    });
+
+</script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/metismenu.js"></script>
+<script>
+    $(function () {
+
+        $('#menu').metisMenu();
+
+        $('#menu2').metisMenu({
+            toggle: false
+        });
+
+        $('#menu3').metisMenu({
+            doubleTapToGo: true
+        });
+    });
+</script>
+<!--底部菜单-->
+<div class="navbar navbar-default navbar-fixed-bottom" style="padding:1px 1px 1px 1px;background: #5cb85c;" >
+    <div class="col-xs-3 text-center">
+        <a href="index.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:1px;">
+            <span class="glyphicon glyphicon-home"></span>
+            <br />首页
+        </a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="shopping.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            <br />购物
+        </a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="shopCart.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <br />购物车
+        </a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="accounter.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+            <span class="glyphicon glyphicon-user"></span>
+            <br />我的
+        </a>
+    </div>
+</div>
+</body>
+</html>

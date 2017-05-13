@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/common.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!--[if lt IE 9 ]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://sdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--顶部-->
+<div class="navbar-fixed-top">
+<div class="top-box">
+    <label><input type="text"></label>
+    <a href="#"><span class="glyphicon glyphicon-search" style="color: white;display: inline-block;font-size: 18px;" id="search"></span></a>
+</div>
+</div>
+
+<!--统计、操作栏-->
+<div class="tool-box">
+    <div class="calculate">
+        <div><span style="color: darkgreen;">共选：</span><span class="totalNum"></span><span>件</span></div>
+        <div><span style="color: darkgreen;">总价：</span><span class="totalPrice"></span><span>元</span></div>
+    </div>
+    <div class="operate">
+        <span><input type="submit" value="支付" id="sub-pay" class="btn btn-primary btn-sm"></span>
+        <span><input type="submit" value="删除" id="sub-delete" class="btn btn-primary btn-sm"></span>
+    </div>
+</div>
+<!--购物车物品信息-->
+<table id="shopCart-table">
+    <tr>
+        <th><label><input type="checkbox" id="selectAll" style="margin-right: 2px;margin-left: 2px;">all</label></th>
+        <th class="goods-info">商品信息</th>
+    </tr>
+    <tr>
+        <td><label><input type="checkbox"></label></td>
+        <td class="goods-info-box">
+            <div>
+                <img src="images/shengcai.jpg" height="298" width="495" alt="loading">
+            </div>
+            <div>
+              <p><span><a href="#">DCHC蔬菜店</a></span></p>
+              <p><span>XXXXXXX新鲜XX菜</span></p>
+              <p><span style="color: red;">￥3</span>
+                <span style="margin-left:30px;"><span class="glyphicon glyphicon-plus" style="font-size:5px; margin-right:5px;"></span><span>1</span><span class="glyphicon glyphicon-minus" style="font-size:5px;margin-left:5px;"></span></span>
+              </p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><label><input type="checkbox"></label></td>
+        <td class="goods-info-box">
+            <div>
+                <img src="images/oil.jpg" height="426" width="640" alt="loading">
+            </div>
+            <div>
+              <p><span><a href="#">DCHC蔬菜店</a></span></p>
+              <p><span>XXXXXXX新鲜XX菜</span></p>
+              <p><span style="color: red;">￥3</span>
+                <span style="margin-left:30px;"><span class="glyphicon glyphicon-plus" style="font-size:5px; margin-right:5px;"></span><span>1</span><span class="glyphicon glyphicon-minus" style="font-size:5px;margin-left:5px;"></span></span>
+              </p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><label><input type="checkbox"></label></td>
+        <td class="goods-info-box">
+            <div>
+                <img src="images/potato.jpg" height="480" width="640" alt="loading">
+            </div>
+            <div>
+              <p><span><a href="#">DCHC蔬菜店</a></span></p>
+              <p><span>XXXXXXX新鲜XX菜</span></p>
+              <p><span style="color: red;">￥3</span>
+                <span style="margin-left:30px;"><span class="glyphicon glyphicon-plus" style="font-size:5px; margin-right:5px;"></span><span>1</span><span class="glyphicon glyphicon-minus" style="font-size:5px;margin-left:5px;"></span></span>
+              </p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><label><input type="checkbox"></label></td>
+        <td class="goods-info-box">
+            <div>
+                <img src="images/donggua.jpg" height="426" width="640" alt="loading">
+            </div>
+            <div>
+              <p><span><a href="#">DCHC蔬菜店</a></span></p>
+              <p><span>XXXXXXX新鲜XX菜</span></p>
+              <p><span style="color: red;">￥3</span>
+                <span style="margin-left:30px;"><span class="glyphicon glyphicon-plus" style="font-size:5px; margin-right:5px;"></span><span>1</span><span class="glyphicon glyphicon-minus" style="font-size:5px;margin-left:5px;"></span></span>
+              </p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><label><input type="checkbox"></label></td>
+        <td class="goods-info-box">
+            <div>
+                <img src="images/caixin.jpg" height="360" width="480" alt="loading">
+            </div>
+            <div>
+              <p><span><a href="#">DCHC蔬菜店</a></span></p>
+              <p><span>XXXXXXX新鲜XX菜</span></p>
+              <p><span style="color: red;">￥3</span>
+                <span style="margin-left:30px;"><span class="glyphicon glyphicon-plus" style="font-size:5px; margin-right:5px;"></span><span>1</span><span class="glyphicon glyphicon-minus" style="font-size:5px;margin-left:5px;"></span></span>
+              </p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><label><input type="checkbox"></label></td>
+        <td class="goods-info-box">
+            <div>
+                <img src="images/yurou.jpg" height="426" width="640" alt="loading">
+            </div>
+            <div>
+              <p><span><a href="#">DCHC蔬菜店</a></span></p>
+              <p><span>XXXXXXX新鲜XX菜</span></p>
+              <p><span style="color: red;">￥3</span>
+                <span style="margin-left:30px;"><span class="glyphicon glyphicon-plus" style="font-size:5px; margin-right:5px;"></span><span>1</span><span class="glyphicon glyphicon-minus" style="font-size:5px;margin-left:5px;"></span></span>
+              </p>
+            </div>
+        </td>
+    </tr>
+</table>
+<div class="more"><a href="#">加载更多<span class="glyphicon glyphicon-chevron-down" style="margin-left: 20px;"></span></a></div>
+<!--底部菜单-->
+<div class="navbar navbar-default navbar-fixed-bottom" style="padding:1px 1px 1px 1px;background: #5cb85c;" >
+    <div class="col-xs-3 text-center">
+        <a href="index.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:1px;">
+            <span class="glyphicon glyphicon-home"></span>
+            <br />首页
+        </a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="shopping.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            <br />购物
+        </a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="shopCart.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <br />购物车
+        </a>
+    </div>
+    <div class="col-xs-3 text-center">
+        <a href="accounter.html" class="btn btn-success btn-xs" style="color:white;width:4em;border:0;">
+            <span class="glyphicon glyphicon-user"></span>
+            <br />我的
+        </a>
+    </div>
+</div>
+</body>
+</html>
